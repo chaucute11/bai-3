@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+    </style>
+    <h2>Đăng ký thành viên</h2>
+    <form method="get">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="ho_Ten">Họ tên:</label>
+                    </td>
+                    <td>
+                        <input name="HoTen" id="ho_Ten" placeholder="Vui lòng nhập họ tên">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mat_Khau">Mật khẩu</label>
+                    </td>
+                    <td>
+                        <input name="MatKhau" id="mat_Khau" placeholder="Vui lòng nhập mật khẩu" type="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Giới tính</label>
+                    </td>
+                    <td>
+                        <input name="GioiTinh" id="nam" type="radio" value="Nam">
+                        <label for="nam">Nam</label>
+                        <input name="GioiTinh" id="nu" type="radio" value="Nu">
+                        <label for="nu">Nữ</label>
+                        <input name="GioiTinh" id="khong_Cong_Bo" type="radio" value="khong_Cong_Bo">
+                        <label for="khong_Cong_Bo">Không công bố</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Sở thích</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="SoThich" id="xem_Phim">
+                        <label for="xem_Phim">Xem phim</label><br>
+                        <input type="checkbox" name="SoThich" id="doc_Sach">
+                        <label for="doc_Sach">Đọc sách</label><br>
+                        <input type="checkbox" name="SoThich" id="nghe_Nhac">
+                        <label for="nghe_Nhac">Nghe nhạc</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="tuoi">Tuổi:</label>
+                    </td>
+                    <td>
+                        <input name="Tuoi" id="tuoi" placeholder="15">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="tim_Kiem">Từ khoá tìm kiếm</label>
+                    </td>
+                    <td>
+                        <input name="TimKiem" id="tim_Kiem">    
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Các loại chọn thời gian
+                    </td>
+                    <td>
+                        <h3>Ngày tháng</h3>
+                        <label for="chon_Ngay">Chọn ngày:</label>
+                        <input name="Ngay" id="chon_Ngay" type="date"><br>
+                        <label for="chon_Thang">Chọn tháng:</label>
+                        <input name="Thang" id="chon_Thang" type="month"><br>
+                        <label for="chon_Tuan">Chọn tuần</label>
+                        <input name="Tuan" id="chon_Tuan" type="week">
+                        <h3>Giờ</h3>
+                        <label for="chon_Gio">Chọn giờ:</label>
+                        <input name="Gio" id="chon_Gio" type="time"><br>
+                        <label for="chon_NgayGio">Chọn cả ngày-giờ</label> 
+                        <input name="NgayGio" id="chon_NgayGio" type="datetime-local">                       
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Xác nhận">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
